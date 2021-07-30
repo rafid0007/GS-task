@@ -1,6 +1,6 @@
 import React from 'react';
 import {Box, Container, Typography} from "@material-ui/core";
-import CustomTable from "../Table/CustomTable";
+import StudentTable from "../Table/StudentTable";
 import {useQuery} from "@apollo/client";
 import {STUDENTS} from "../../queries/queries";
 
@@ -17,7 +17,7 @@ const HomeScreen = () => {
                 <Typography variant="h4" align="center">STUDENT TABLE</Typography>
             </Box>
             <Box>
-                <CustomTable studentsData={students}/>
+                <StudentTable studentsData={students}/>
             </Box>
         </Container>
     );
